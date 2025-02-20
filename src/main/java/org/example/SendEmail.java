@@ -6,7 +6,14 @@ import javax.mail.internet.*;
 
 public class SendEmail {
     public static void main(String[] args) {
-        // Настройки SMTP-сервера Mail.ru
+
+//    Как создать пароль для внешнего сервиса , для внешнего приложения:
+//   • Перейдите на страницу безопасности вашей учетной записи Mail.ru.
+//   • Найдите раздел, связанный с "Паролями приложений" или "Доступом приложений".
+//   • Создайте новый пароль приложения. Вам будет предоставлен уникальный код.
+
+
+                // Настройки SMTP-сервера Mail.ru
         String host = "smtp.mail.ru";
         String port = "465"; // Порт для SSL
         String username = "sozin.vladislav@mail.ru"; // Ваш email
@@ -37,8 +44,8 @@ public class SendEmail {
             message.setFrom(new InternetAddress("sozin.vladislav@mail.ru"));
             message.setRecipients(Message.RecipientType.TO,
                     InternetAddress.parse("sozin.vladislav@mail.ru"));
-            message.setSubject("Тема письма");
-            message.setText("Текст письма");
+            message.setSubject("Чиглинцев Владимир. Тема письма.");
+            message.setText("Чиглинцев Владимир. Текст письма");
 
             // Отправка сообщения
             Transport.send(message);
