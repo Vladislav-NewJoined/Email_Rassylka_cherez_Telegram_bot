@@ -16,6 +16,8 @@ mvn compile exec:java -Dexec.mainClass="org.example.Main"
 2. Для теста email без бота:
 bash
 mvn compile exec:java -Dexec.mainClass="org.example.SendEmail"
+3. Ещё проверка:
+mvn clean compile exec:java
 
 Здесь инфо, как создать рассылку: https://dev.to/suprsend/how-to-send-email-notifications-using-java-3-methods-with-code-examples-2ckd
 Как создать пароль для внешнего сервиса , для внешнего приложения:
