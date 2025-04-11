@@ -7,6 +7,7 @@ import javax.mail.internet.*;
 public class SendEmail {
     public static void main(String[] args) {
 
+//    Инструкция, как пользоваться кодом в файле README_ИНСТРУКЦИЯ в корневой папке проекта
 //    Здесь инфо, как создать рассылку: https://dev.to/suprsend/how-to-send-email-notifications-using-java-3-methods-with-code-examples-2ckd
 //    Как создать пароль для внешнего сервиса , для внешнего приложения:
 //   • Перейдите на страницу безопасности вашей учетной записи Mail.ru.
