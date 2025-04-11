@@ -9,6 +9,13 @@ https://t.me/BES_Mailing_bot
 7658983765:AAFaNCkR8D5O74u-YkMVZyjxuePRXY1NZ64
 Java проект по контексту поиска этот: Email_Rassylka_cherez_Telegram_bot
 
+Команды в терминале bash для проверки работы проекта:
+1. Для Telegram-бота:
+bash
+mvn compile exec:java -Dexec.mainClass="org.example.Main"
+2. Для теста email без бота:
+bash
+mvn compile exec:java -Dexec.mainClass="org.example.SendEmail"
 
 Здесь инфо, как создать рассылку: https://dev.to/suprsend/how-to-send-email-notifications-using-java-3-methods-with-code-examples-2ckd
 Как создать пароль для внешнего сервиса , для внешнего приложения:
