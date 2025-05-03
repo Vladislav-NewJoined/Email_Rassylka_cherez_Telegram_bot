@@ -11,7 +11,7 @@ RUN mvn dependency:go-offline -B
 # Теперь копируем исходный код
 COPY src ./src
 
-# Собираем проект с явным указанием версии Java
+# Собираем проект
 RUN mvn clean package -DskipTests
 
 # Этап запуска
