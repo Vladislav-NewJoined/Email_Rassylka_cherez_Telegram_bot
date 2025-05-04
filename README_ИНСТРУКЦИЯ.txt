@@ -4,6 +4,7 @@ README_ИНСТРУКЦИЯ
 ИНФОРМАЦИЯ О РАЗВЁРНУТОМ ПРОЕКТЕ НА https://dashboard.render.com/
 Проект здесь: https://dashboard.render.com/project/prj-d09njg15pdvs73e0ker0
 Проект с настройками деплоя здесь: https://dashboard.render.com/web/srv-d0ackd0gjchc73caru7g/deploys/dep-d0bg10hr0fns73de2f40?r=2025-05-04%4005%3A51%3A03%7E2025-05-04%4005%3A54%3A15
+Логин и пароль предоставляются по запросу
 
 Данные Телеграм бота:
 Название этого бота (переименованное, просто для меня в списке ботов):
