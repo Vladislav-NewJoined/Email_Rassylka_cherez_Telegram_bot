@@ -26,19 +26,36 @@ public class MailingBot extends TelegramLongPollingBot {
 
     @Override
     public void onUpdateReceived(Update update) {
+        System.out.println("Получено обновление: " + update);
+
         if (!update.hasMessage() || !update.getMessage().hasText()) {
+            System.out.println("Обновление не содержит текстового сообщения");
             return;
         }
 
         long chatId = update.getMessage().getChatId();
         String userInput = update.getMessage().getText();
 
-        if ("/start".equals(userInput)) {
-            resetState(chatId);
-        } else if (waitingForEmails) {
-            processEmailList(chatId, userInput);
-        } else if (waitingForMessage) {
-            processMessage(chatId, userInput);
+        System.out.println("Получено сообщение: '" + userInput + "' от пользователя с chatId: " + chatId);
+
+        try {
+            if ("/start".equals(userInput)) {
+                System.out.println("Обработка команды /start");
+                resetState(chatId);
+                System.out.println("Команда /start обработана успешно");
+            } else if (waitingForEmails) {
+                System.out.println("Обработка списка email-адресов");
+                processEmailList(chatId, userInput);
+            } else if (waitingForMessage) {
+                System.out.println("Обработка текста сообщения");
+                processMessage(chatId, userInput);
+            }
+        } catch (Exception e) {
+            System.err.println("Ошибка при обработке сообщения: " + e.getMessage());
+            e.printStackTrace();
+
+            // Отправляем сообщение об ошибке пользователю
+            sendMessage(chatId, "❌ Произошла ошибка: " + e.getMessage());
         }
     }
 
