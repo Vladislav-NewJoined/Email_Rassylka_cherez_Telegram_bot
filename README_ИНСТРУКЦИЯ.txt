@@ -17,9 +17,12 @@ sozin.vladislav@gmail.com
 
 Если Deploy "заснул", нужно зайти в Deploy, сюда:
 https://dashboard.render.com/web/srv-d0ackd0gjchc73caru7g/deploys/dep-d0bg10hr0fns73de2f40?r=2025-05-04%4005%3A51%3A03%7E2025-05-04%4005%3A54%3A15
+логин: sozin.vladislav@mail.ru
+пароль: sozsoz1967.Aren
 
 Вверху справа найти кнопку: Manual deploy
 Нажать на стрелку "вниз" в этой кнопке.
+Выбрать: Clear build cache & deploy
 	Запустится Deploy.
 Дождаться в окне Деплоя появления надписи: ==> Your service is live 🎉
 И после этого уже заходить в Телеграм бот.
